@@ -12,6 +12,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+
   <!--Отображаемое тело страницы-->
   <body>
     <!--Оболочка для демонстрации-->
@@ -19,7 +20,7 @@
       <!--Контент-->
 
       <!--Шапка-->
-      <div class="header">
+      <div id="top" class="header">
         <!--Ограничивающий контейнер-->
         <div class="container">
           <div class="header__row">
@@ -30,12 +31,25 @@
               </div>
               <nav class="menu__body">
                 <ul class="menu__list">
-                  <li><a href="" class="menu__link">Ссылка 1</a></li>
-                  <li><a href="" class="menu__link">Ссылка 2</a></li>
-                  <li><a href="" class="menu__link">Ссылка 3</a></li>
-                  <li><a href="" class="menu__link">Ссылка 4</a></li>
+                  <li><a href="" class="menu__link">Начало</a></li>
+                  <li>
+                    <a href="#titleThatIsWebTech" class="menu__link"
+                      >Что такое Web-технология?</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#titleShortReview" class="menu__link"
+                      >Краткий обзор HTML/CSS/JS
+                    </a>
+                  </li>
+                  <li><a href="" class="menu__link">Обзор HTML</a></li>
+                  <li><a href="" class="menu__link">Обзор CSS</a></li>
+                  <li><a href="" class="menu__link">Обзор JavaScript</a></li>
                 </ul>
               </nav>
+            </div>
+            <div class="start-button start-button--position_absolute">
+              <a href="#top" class="start-buton__link">В начало</a>
             </div>
           </div>
         </div>
@@ -47,7 +61,9 @@
         <div class="container">
           <div class="introduction">
             <div class="introduction__row">
-              <h2 class="introduction__title">Что такое Web-технология?</h2>
+              <h2 id="titleThatIsWebTech" class="introduction__title">
+                Что такое Web-технология?
+              </h2>
               <p class="introduction__text">
                 Логично предположить, что web-технологии, это технологии,
                 которые используются в web. Согласно документации
@@ -73,10 +89,11 @@
             </div>
           </div>
           <div class="technology">
+            <h2 id="titleShortReview" class="technology__title"></h2>
             <div class="technology__row">
               <div class="technology__HTML">
                 <img
-                  src="img/html5--transparent.png"
+                  src="src/img/html5--transparent.png"
                   alt="изображение HTML5"
                   class="technology__img"
                 />
@@ -89,7 +106,7 @@
               </div>
               <div class="technology__CSS">
                 <img
-                  src="img/CSS3--transparent.png"
+                  src="src/img/CSS3--transparent.png"
                   alt="изображение CSS3"
                   class="technology__img"
                 />
@@ -102,7 +119,7 @@
               </div>
               <div class="technology__JS">
                 <img
-                  src="img/JS--transparent.png"
+                  src="src/img/JS--transparent.png"
                   alt="изображение JS"
                   class="technology__img"
                 />
