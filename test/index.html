@@ -7,7 +7,7 @@
     <!--Заголовок страницы в браузере-->
     <title>Курс от DD</title>
     <!--Подключаем CSS-->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="src/CSS/style.css" />
     <!--Кодировка страницы-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,18 +33,26 @@
                 <ul class="menu__list">
                   <li><a href="" class="menu__link">Начало</a></li>
                   <li>
-                    <a href="#titleThatIsWebTech" class="menu__link"
+                    <a href="#introductionTitle" class="menu__link"
                       >Что такое Web-технология?</a
                     >
                   </li>
                   <li>
-                    <a href="#titleShortReview" class="menu__link"
+                    <a href="#shortReviewTitle" class="menu__link"
                       >Краткий обзор HTML/CSS/JS
                     </a>
                   </li>
-                  <li><a href="" class="menu__link">Обзор HTML</a></li>
-                  <li><a href="" class="menu__link">Обзор CSS</a></li>
-                  <li><a href="" class="menu__link">Обзор JavaScript</a></li>
+                  <li>
+                    <a href="#htmlReviewTitle" class="menu__link">Обзор HTML</a>
+                  </li>
+                  <li>
+                    <a href="#CSSReviewTitle" class="menu__link">Обзор CSS</a>
+                  </li>
+                  <li>
+                    <a href="#JSReviewTitle" class="menu__link"
+                      >Обзор JavaScript</a
+                    >
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -61,7 +69,7 @@
         <div class="container">
           <div class="introduction">
             <div class="introduction__row">
-              <h2 id="titleThatIsWebTech" class="introduction__title">
+              <h2 id="introductionTitle" class="content-title">
                 Что такое Web-технология?
               </h2>
               <p class="introduction__text">
@@ -89,7 +97,9 @@
             </div>
           </div>
           <div class="technology">
-            <h2 id="titleShortReview" class="technology__title"></h2>
+            <h2 id="shortReviewTitle" class="content-title">
+              Краткий обзор HTML, CSS и JavaScript
+            </h2>
             <div class="technology__row">
               <div class="technology__HTML">
                 <img
@@ -130,12 +140,35 @@
                   структурированной форме.
                 </p>
               </div>
-
-              <h1>Тестовое задание</h1>
-              <h2></h2>
-              <p></p>
             </div>
           </div>
+        </div>
+
+        <div class="htmlReview">
+          <h2
+            id="htmlReviewTitle"
+            class="htmlReview__title htmlReview__title--menuTitle"
+          >
+            HTML
+          </h2>
+        </div>
+
+        <div class="CSSReview">
+          <h2
+            id="CSSReviewTitle"
+            class="CSSReview__title CSSReview__title--menuTitle"
+          >
+            CSS
+          </h2>
+        </div>
+
+        <div class="JSReview">
+          <h2
+            id="JSReviewTitle"
+            class="JSReview__title JSReview__title--menuTitle"
+          >
+            JavaScript
+          </h2>
         </div>
       </div>
 
