@@ -1,0 +1,88 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1080px;
+  margin: 0px auto;
+}
+
+/*-----------------------------------------------------------------*/
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  min-height: 75px;
+  align-items: center;
+}
+
+.header__row {
+  display: inherit;
+  min-height: inherit;
+  align-items: inherit;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: aquamarine;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.header__menu {
+  margin: 0px 0px 0px 133px;
+}
+@media (max-width: 960px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
+}
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 40px;
+  }
+}
+@media (max-width: 479px) {
+  .header__menu {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+.menu {
+  padding: 5px 0px;
+}
+
+.menu__list {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.menu__item {
+}
+
+.menu__item:not(:last-child) {
+  margin: 0px 21px 0px 0px; /* Подсмотрел у "Фрилансера по жизни", но я так понял что он сам перемудрил. Правило для margin можно было задать и без псевдо элемента (я проверил, работает!).    */
+}
+
+.menu__link {
+  color: brown;
+  font-weight: 500;
+  line-height: calc(24 / 14 * 100%); /* размер шрифта / на ______ * на 100%   */
+}
+@media (max-width: 479px) {
+  .menu__link {
+    font-size: 18px;
+  }
+}

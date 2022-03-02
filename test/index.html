@@ -20,58 +20,44 @@
       <!--Контент-->
 
       <!--Шапка-->
-      <div id="top" class="header">
+      <header id="top" class="header">
         <!--Ограничивающий контейнер-->
-        <div class="container">
+        <div class="header__container _container">
           <div class="header__row">
-            <a class="header__logo" href=""></a>
-            <div class="header_menu menu">
-              <div class="menu__icon icon-menu">
-                <span></span>
-              </div>
-              <nav class="menu__body">
-                <ul class="menu__list">
-                  <li><a href="" class="menu__link">Начало</a></li>
-                  <li>
-                    <a href="#introductionTitle" class="menu__link"
-                      >Что такое Web-технология?</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#shortReviewTitle" class="menu__link"
-                      >Краткий обзор HTML/CSS/JS
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#htmlReviewTitle" class="menu__link">Обзор HTML</a>
-                  </li>
-                  <li>
-                    <a href="#CSSReviewTitle" class="menu__link">Обзор CSS</a>
-                  </li>
-                  <li>
-                    <a href="#JSReviewTitle" class="menu__link"
-                      >Обзор JavaScript</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="start-button start-button--position_absolute">
-              <a href="#top" class="start-buton__link">В начало</a>
-            </div>
+            <a class="header__logo" href="">DIGITAL<br />GESIGN</a>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#top">Начало</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#m-title-1">Web-технологии</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#m-title-2">HTML/CSS/JS</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#m-title-3">Обзор HTML</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#m-title-4">Обзор CSS</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#m-title-5">Обзор JavaScript</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
+      </header>
 
-      <!--Тело-->
-      <div class="">
-        <!--Ограничивающий контейнер-->
-        <div class="container">
-          <div class="introduction">
+      <!--Main - это пространство между шапкой и подвалом -->
+      <main class="main">
+        <!--Первый раздел - Введение!-->
+        <div class="introduction">
+          <div class="introduction__container _container">
             <div class="introduction__row">
-              <h2 id="introductionTitle" class="content-title">
-                Что такое Web-технология?
-              </h2>
+              <h2 id="m-title-1" class="introduction__title">Web-технологии</h2>
               <p class="introduction__text">
                 Логично предположить, что web-технологии, это технологии,
                 которые используются в web. Согласно документации
@@ -96,8 +82,12 @@
               </p>
             </div>
           </div>
-          <div class="technology">
-            <h2 id="shortReviewTitle" class="content-title">
+        </div>
+
+        <!--Второй раздел - Краткий обзор HTML, CSS, JS!-->
+        <div class="technology">
+          <div class="technology__container _container">
+            <h2 id="m-title-2" class="content-title">
               Краткий обзор HTML, CSS и JavaScript
             </h2>
             <div class="technology__row">
@@ -144,43 +134,66 @@
           </div>
         </div>
 
+        <!--Третий раздел - HTML!-->
         <div class="htmlReview">
-          <h2
-            id="htmlReviewTitle"
-            class="htmlReview__title htmlReview__title--menuTitle"
-          >
-            HTML
-          </h2>
+          <div class="htmlReview__container _container">
+            <div class="htmlReview__row">
+              <h2
+                id="m-title-3"
+                class="htmlReview__title htmlReview__title--menuTitle"
+              >
+                HTML
+              </h2>
+            </div>
+          </div>
         </div>
 
+        <!--Четвертый раздел - HTML!-->
         <div class="CSSReview">
-          <h2
-            id="CSSReviewTitle"
-            class="CSSReview__title CSSReview__title--menuTitle"
-          >
-            CSS
-          </h2>
+          <div class="CSSReview__container _container">
+            <div class="CSSReview__row">
+              <h2
+                id="m-title-4"
+                class="CSSReview__title CSSReview__title--menuTitle"
+              >
+                CSS
+              </h2>
+            </div>
+          </div>
         </div>
 
+        <!--Пятый раздел - HTML!-->
         <div class="JSReview">
-          <h2
-            id="JSReviewTitle"
-            class="JSReview__title JSReview__title--menuTitle"
-          >
-            JavaScript
-          </h2>
+          <div class="JSReview__container _container">
+            <div class="JSReview__row">
+              <h2
+                id="m-title-5"
+                class="JSReview__title JSReview__title--menuTitle"
+              >
+                JavaScript
+              </h2>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <!--Чтобы страница прокручивалась/ Потом удалить-->
+        <br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </main>
 
       <!--Подвал-->
-      <div class="footer">
+      <footer class="footer">
         <!--Ограничивающий контейнер-->
-        <div class="container">
-          <div class="footer__row"></div>
+        <div class="footer__container _container">
+          <div class="footer__row">
+            <div class="start-button start-button--position_absolute">
+              <a href="#top" class="start-buton__link">В начало</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
-    <script src="JS/script.js"></script>
+    <script src="src/JS/script.js"></script>
   </body>
 </html>
 
