@@ -18,27 +18,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.technology__HTML {
-  max-width: 33.33%;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: burlywood;
+.wrapper {
+  min-height: 100%; /* высота по размеру эрана */
+  overflow: hidden; /* скрываем элементы которые вылазяют за экран */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.technology__CSS {
-  max-width: 33.33%;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: cornflowerblue;
+.column__container {
+  max-width: 1200px;
+  margin: 0px auto;
+
+  /* Flex правила */
+  display: flex; /* задаём элементу поведение flex */
+  flex-direction: column; /* направление вертикальное (сверху вниз) */
+  justify-content: space-between; /* выравнивание - растянутое с пустотой*/
 }
 
-.technology__JS {
-  max-width: 33.33%;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: indianred;
-}
-
-.technology__img {
-  width: 150px;
+.row__container {
+  display: flex;
+  flex-direction: row;
 }

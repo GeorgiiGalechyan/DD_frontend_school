@@ -16,179 +16,252 @@
   <!--Отображаемое тело страницы-->
   <body>
     <!--Оболочка для демонстрации-->
-    <div class="wrapper">
-      <!--Контент-->
-
+    <div class="wrapper _column">
       <!--Шапка-->
       <header id="top" class="header">
         <!--Ограничивающий контейнер-->
-        <div class="header__container _container">
-          <div class="header__row">
-            <a class="header__logo" href="">DIGITAL<br />GESIGN</a>
-            <nav class="header__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" href="#top">Начало</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#m-title-1">Web-технологии</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#m-title-2">HTML/CSS/JS</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#m-title-3">Обзор HTML</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#m-title-4">Обзор CSS</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#m-title-5">Обзор JavaScript</a>
-                </li>
-              </ul>
-            </nav>
+        <div class="header__container column__container">
+          <!--Содержимое блока header (шапки)-->
+          <div class="header__content">
+            <div class="header__row">
+              <a class="header__logo" href="">DIGITAL<br />GESIGN</a>
+              <nav class="header__menu menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#top">Начало</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#m-title-1">Web-технологии</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#m-title-2">HTML/CSS/JS</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#m-title-3">Обзор HTML</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#m-title-4">Обзор CSS</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#m-title-5">Обзор JavaScript</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
 
       <!--Main - это пространство между шапкой и подвалом -->
       <main class="main">
-        <!--Первый раздел - Введение!-->
-        <div class="introduction">
-          <div class="introduction__container _container">
-            <div class="introduction__row">
-              <h2 id="m-title-1" class="introduction__title">Web-технологии</h2>
-              <p class="introduction__text">
-                Логично предположить, что web-технологии, это технологии,
-                которые используются в web. Согласно документации
-                <a href="https://developer.mozilla.org/ru/docs/Web"
-                  >MDN Web Docs</a
-                >
-                к web-технологиям можно отнести:
-              </p>
-              <ul class="introduction__list">
-                <li>базовые технологии веб разработки (HTML, CSS, HTTP);</li>
-                <li>
-                  технологии написания сценариев (JavaScript, Веб API, Веб
-                  компоненты);
-                </li>
-                <li>графика (Canvas, SVG, WebGL);</li>
-                <li>аудио, видео и мультимедиа;</li>
-                <li>прочие.</li>
-              </ul>
-              <p class="introduction__text">
-                Сегодня мы кратенько рассмотрим классическую тройку веб
-                технологий - HTML, CSS, JavaScript.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--Второй раздел - Краткий обзор HTML, CSS, JS!-->
-        <div class="technology">
-          <div class="technology__container _container">
-            <h2 id="m-title-2" class="content-title">
-              Краткий обзор HTML, CSS и JavaScript
-            </h2>
-            <div class="technology__row">
-              <div class="technology__HTML">
-                <img
-                  src="src/img/html5--transparent.png"
-                  alt="изображение HTML5"
-                  class="technology__img"
-                />
-                <h3 class="technology__name">HTML</h3>
-                <p class="technology__description">
-                  Язык гипертекстовой разметки — это язык, используемый для
-                  определения структуры и описания содержания веб-страницы в
-                  структурированной форме.
-                </p>
-              </div>
-              <div class="technology__CSS">
-                <img
-                  src="src/img/CSS3--transparent.png"
-                  alt="изображение CSS3"
-                  class="technology__img"
-                />
-                <h3 class="technology__name">CSS</h3>
-                <p class="technology__description">
-                  Язык гипертекстовой разметки — это язык, используемый для
-                  определения структуры и описания содержания веб-страницы в
-                  структурированной форме.
-                </p>
-              </div>
-              <div class="technology__JS">
-                <img
-                  src="src/img/JS--transparent.png"
-                  alt="изображение JS"
-                  class="technology__img"
-                />
-                <h3 class="technology__name">JS</h3>
-                <p class="technology__description">
-                  Язык гипертекстовой разметки — это язык, используемый для
-                  определения структуры и описания содержания веб-страницы в
-                  структурированной форме.
-                </p>
+        <!--Ограниительный контейнер для блока main-->
+        <div class="main__container column__container">
+          <!--Содержание блока main-->
+          <div class="main__content">
+            <!-- Сайдбар - это колонка слева, где будет находится оглавление -->
+            <div class="sidebar">
+              <div class="sidebar__table">
+                <ul class="table__list">
+                  <ol class="table__item">
+                    <a href="" class="table__link">Начало</a>
+                  </ol>
+                  <ol class="table__item">
+                    <a href="" class="table__link">Web-технологии</a>
+                  </ol>
+                  <ol class="table__item">
+                    <a href="" class="table__link">HTML/CSS/JS</a>
+                  </ol>
+                  <ol class="table__item">
+                    <a href="" class="table__link">Обзор HTML</a>
+                    <ul class="table__list">
+                      <ol class="table__item">
+                        <a href="" class="table__link">Подпункт 1</a>
+                      </ol>
+                      <ol class="table__item">
+                        <a href="" class="table__link">Подпункт 2</a>
+                      </ol>
+                      <ol class="table__item">
+                        <a href="" class="table__link">Подпункт 3</a>
+                      </ol>
+                    </ul>
+                  </ol>
+                  <ol class="table__item">
+                    <a href="" class="table__link">Обзор CSS</a>
+                  </ol>
+                  <ol class="table__item">
+                    <a href="" class="table__link">Обзор JavaScript</a>
+                  </ol>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!--Третий раздел - HTML!-->
-        <div class="htmlReview">
-          <div class="htmlReview__container _container">
-            <div class="htmlReview__row">
-              <h2
-                id="m-title-3"
-                class="htmlReview__title htmlReview__title--menuTitle"
-              >
-                HTML
-              </h2>
+            <!-- Не сайдбар (т.е. всё остальное)-->
+            <div class="notsidebar">
+              <!--Оболочка, чтобы выстроить содержимые блоки по вертикали flex > column-->
+              <div class="notsidebar__column _column">
+                <!--Первый раздел - Введение!-->
+                <div class="introduction">
+                  <div class="introduction__container">
+                    <div class="introduction__row">
+                      <h2 id="m-title-1" class="introduction__title">
+                        Web-технологии
+                      </h2>
+                      <p class="introduction__text">
+                        Логично предположить, что web-технологии, это
+                        технологии, которые используются в web. Согласно
+                        документации
+                        <a href="https://developer.mozilla.org/ru/docs/Web"
+                          >MDN Web Docs</a
+                        >
+                        к web-технологиям можно отнести:
+                      </p>
+                      <ul class="introduction__list">
+                        <li>
+                          базовые технологии веб разработки (HTML, CSS, HTTP);
+                        </li>
+                        <li>
+                          технологии написания сценариев (JavaScript, Веб API,
+                          Веб компоненты);
+                        </li>
+                        <li>графика (Canvas, SVG, WebGL);</li>
+                        <li>аудио, видео и мультимедиа;</li>
+                        <li>прочие.</li>
+                      </ul>
+                      <p class="introduction__text">
+                        Сегодня мы кратенько рассмотрим классическую тройку веб
+                        технологий - HTML, CSS, JavaScript.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Второй раздел - Краткий обзор HTML, CSS, JS!-->
+                <div class="technology">
+                  <div class="technology__container column__container">
+                    <h2 id="m-title-2" class="content-title">
+                      Краткий обзор HTML, CSS и JavaScript
+                    </h2>
+                    <div class="technology__row row__container">
+                      <div class="technology__HTML">
+                        <img
+                          src="src/img/html5--transparent.png"
+                          alt="изображение HTML5"
+                          class="technology__img"
+                        />
+                        <h3 class="technology__name">HTML</h3>
+                        <p class="technology__description">
+                          Язык гипертекстовой разметки — это язык, используемый
+                          для определения структуры и описания содержания
+                          веб-страницы в структурированной форме.
+                        </p>
+                      </div>
+                      <div class="technology__CSS">
+                        <img
+                          src="src/img/CSS3--transparent.png"
+                          alt="изображение CSS3"
+                          class="technology__img"
+                        />
+                        <h3 class="technology__name">CSS</h3>
+                        <p class="technology__description">
+                          Язык гипертекстовой разметки — это язык, используемый
+                          для определения структуры и описания содержания
+                          веб-страницы в структурированной форме.
+                        </p>
+                      </div>
+                      <div class="technology__JS">
+                        <img
+                          src="src/img/JS--transparent.png"
+                          alt="изображение JS"
+                          class="technology__img"
+                        />
+                        <h3 class="technology__name">JS</h3>
+                        <p class="technology__description">
+                          Язык гипертекстовой разметки — это язык, используемый
+                          для определения структуры и описания содержания
+                          веб-страницы в структурированной форме.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Третий раздел - HTML!-->
+                <div class="htmlReview">
+                  <div class="htmlReview__container">
+                    <div class="htmlReview__row row__container">
+                      <h2
+                        id="m-title-3"
+                        class="htmlReview__title htmlReview__title--menuTitle"
+                      >
+                        HTML
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Четвертый раздел - CSS!-->
+                <div class="CSSReview">
+                  <div class="CSSReview__container">
+                    <div class="CSSReview__row row__container">
+                      <h2
+                        id="m-title-4"
+                        class="CSSReview__title CSSReview__title--menuTitle"
+                      >
+                        CSS
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Пятый раздел - JavaScript!-->
+                <div class="JSReview">
+                  <div class="JSReview__container">
+                    <div class="JSReview__row row__container">
+                      <h2
+                        id="m-title-5"
+                        class="JSReview__title JSReview__title--menuTitle"
+                      >
+                        JavaScript
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!--Четвертый раздел - HTML!-->
-        <div class="CSSReview">
-          <div class="CSSReview__container _container">
-            <div class="CSSReview__row">
-              <h2
-                id="m-title-4"
-                class="CSSReview__title CSSReview__title--menuTitle"
-              >
-                CSS
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <!--Пятый раздел - HTML!-->
-        <div class="JSReview">
-          <div class="JSReview__container _container">
-            <div class="JSReview__row">
-              <h2
-                id="m-title-5"
-                class="JSReview__title JSReview__title--menuTitle"
-              >
-                JavaScript
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <!--Чтобы страница прокручивалась/ Потом удалить-->
-        <br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
 
       <!--Подвал-->
       <footer class="footer">
         <!--Ограничивающий контейнер-->
-        <div class="footer__container _container">
-          <div class="footer__row">
-            <div class="start-button start-button--position_absolute">
-              <a href="#top" class="start-buton__link">В начало</a>
+        <div class="footer__container">
+          <div class="footer__column column__container">
+            <div class="footer__license row__container">
+              <h3 class="license__text">
+                @ Использование кода третьими лицами запрещено, 2022.
+              </h3>
             </div>
+            <div class="footer__author row__container">
+              <a
+                class="author__name"
+                href="https://github.com/GeorgiiGalechyan/"
+                target="_blank"
+                >Georgii Galechyan</a
+              >
+              <a
+                class="author__email"
+                href="mailto:galechyan1991@gmail.com"
+                target="_blank"
+                >galechyan1991@gmail.com</a
+              >
+              <a class="author__phone" href="tel:+79030238585" target="_blank"
+                >+7 (903) 023-85-85</a
+              >
+            </div>
+          </div>
+          <div class="footer__start-button start-button--position_absolute">
+            <a href="#top" class="start-buton__link">В начало</a>
           </div>
         </div>
       </footer>

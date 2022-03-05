@@ -1,4 +1,53 @@
 .footer {
   background-color: darkslategrey;
   width: 100%;
+  color: aliceblue;
+  font-size: 18px;
+}
+.footer a {
+  color: bisque;
+  font-size: 18px;
+}
+.footer__container {
+}
+.footer__column {
+}
+
+.footer__license {
+  margin: 50px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.license__text {
+}
+.footer__author {
+  margin: 20px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.author__name {
+  margin: 0 20px;
+  padding: 10px 0;
+  flex-wrap: nowrap;
+}
+.author__email {
+  margin: 0 20px;
+  padding: 10px 0;
+  flex-wrap: nowrap;
+}
+.author__phone {
+  margin: 0 20px;
+  padding: 10px 0;
+  flex-wrap: nowrap;
+}
+.footer__start-button {
+}
+.start-button--position_absolute {
+}
+.start-buton__link {
 }

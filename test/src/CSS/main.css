@@ -1,3 +1,114 @@
 .main {
-  flex: 1 1 auto;
+  flex: 1 1 auto; /* разрешаем элементу увеличиваться и прижать footer к низу*/
+}
+.main__container {
+}
+
+.main__content {
+  display: flex;
+  align-content: center;
+}
+
+/*  Сайдбар (слева от основного содержимого страницы) --------------------- */
+
+.sidebar {
+}
+
+.sidebar__table {
+}
+
+.table__list {
+}
+
+.table__item {
+}
+
+.table__link {
+}
+
+/*  Содержимое страницы (справа от сайдбара) ------------------------------- */
+
+.notsidebar {
+}
+
+.notsidebar__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+}
+.introduction__container {
+}
+.introduction__row {
+}
+.introduction__title {
+}
+.introduction__text {
+}
+.introduction__list {
+}
+
+.technology {
+}
+
+/* ограничивающий контейнер для блоков??? */
+.technology__container {
+}
+
+.content-title {
+}
+
+.technology__row {
+}
+.technology__HTML {
+}
+.technology__img {
+}
+.technology__name {
+}
+.technology__description {
+}
+.technology__CSS {
+}
+.technology__JS {
+}
+
+/* Блок с описанием HTML */
+
+.htmlReview {
+}
+.htmlReview__container {
+}
+.htmlReview__row {
+}
+.htmlReview__title {
+}
+.htmlReview__title--menuTitle {
+}
+
+/* Блок с описанием CSS */
+
+.CSSReview {
+}
+.CSSReview__container {
+}
+.CSSReview__row {
+}
+.CSSReview__title {
+}
+.CSSReview__title--menuTitle {
+}
+
+/* Блок с описанием JS */
+
+.JSReview {
+}
+.JSReview__container {
+}
+.JSReview__row {
+}
+.JSReview__title {
+}
+.JSReview__title--menuTitle {
 }
