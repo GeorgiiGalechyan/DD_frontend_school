@@ -1,46 +1,146 @@
 /*-----------------------------------------------------------------*/
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 50;
 }
 
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* высота на 100% шапки*/
+  background-color: blueviolet;
+  z-index: 2;
+}
+
 .header__container {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: 0px auto;
 }
 
 .header__row {
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  height: 80px;
   align-items: center;
   flex-wrap: nowrap;
-  width: 100%;
-  min-height: 75px;
   padding: 10px 15px;
-  background-color: aquamarine;
 }
 
 .header__logo {
+  /*flex: 0 0 60px;
+  border-radius: 50%; */ /* Если логотип - картинка  */
+  overflow: hidden;
   font-size: 24px;
   font-weight: 600;
+  position: relative;
+  z-index: 3;
+}
+
+/* .header__logo img {
+  max-width: 100%;
+  display: block;
+} */ /* - Если логотип картинка */
+
+.header__burger {
+  display: none;
 }
 
 .header__menu {
   display: flex;
   margin: 0px 0px 0px 133px;
 }
+
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.header__item {
+  list-style: none;
+  margin: 0px 0px 0px 20px;
+}
+
+.header__link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: calc(16 / 14 * 100%); /* размер шрифта / на ______ * на 100%   */
+}
+
 @media (max-width: 960px) {
   .header__menu {
     margin: 0px 0px 0px 80px;
   }
 }
 @media (max-width: 767px) {
+  .header__row {
+    height: 50px;
+  }
+
+  .header__logo {
+    font-size: 16px;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 4;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: white;
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
   .header__menu {
-    margin: 0px 0px 0px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #18b5a4;
+    padding: 70px 10px 20px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__item {
+    margin: 0px 0px 20px 0px;
   }
 }
 @media (max-width: 479px) {
@@ -49,28 +149,6 @@
   }
 }
 
-.menu {
-  padding: 5px 0px;
-}
-
-.menu__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.menu__item {
-}
-
-.menu__item:not(:last-child) {
-  margin: 0px 21px 0px 0px; /* Подсмотрел у "Фрилансера по жизни", но я так понял что он сам перемудрил. Правило для margin можно было задать и без псевдо элемента (я проверил, работает!).    */
-}
-
-.menu__link {
-  color: brown;
-  font-weight: 500;
-  line-height: calc(24 / 14 * 100%); /* размер шрифта / на ______ * на 100%   */
-}
 @media (max-width: 479px) {
   .menu__link {
     font-size: 18px;

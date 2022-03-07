@@ -1,10 +1,12 @@
 .main {
   flex: 1 1 auto; /* разрешаем элементу увеличиваться и прижать footer к низу*/
+  padding: 100px 0 0 0;
 }
 .main__container {
+  width: 1200px;
 }
 
-.main__content {
+.main__page {
   display: flex;
   align-content: center;
 }
@@ -28,10 +30,10 @@
 
 /*  Содержимое страницы (справа от сайдбара) ------------------------------- */
 
-.notsidebar {
+.content {
 }
 
-.notsidebar__column {
+.content__column {
   display: flex;
   flex-direction: column;
 }
@@ -60,18 +62,33 @@
 }
 
 .technology__row {
+  display: flex;
+  flex-direction: row;
 }
 .technology__HTML {
+  display: flex;
+  flex-direction: column;
 }
+
 .technology__img {
+  flex: 0 1 150px;
 }
+
+.technology__img img {
+  max-width: 100%;
+}
+
 .technology__name {
 }
 .technology__description {
 }
 .technology__CSS {
+  display: flex;
+  flex-direction: column;
 }
 .technology__JS {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Блок с описанием HTML */

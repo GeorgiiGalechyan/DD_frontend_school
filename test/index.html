@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="src/CSS/style.css" />
     <!--Кодировка страницы-->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Адаптивности -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=0"
+    />
+    <!--Отключае форматирование ссылок у номера телеона на iOS-->
+    <meta name="format-detection" content="telephone=no" />
   </head>
 
   <!--Отображаемое тело страницы-->
-  <body>
+  <body body>
     <!--Оболочка для демонстрации-->
     <div class="wrapper _column">
       <!--Шапка-->
@@ -25,25 +31,30 @@
           <div class="header__content">
             <div class="header__row">
               <a class="header__logo" href="">DIGITAL<br />GESIGN</a>
-              <nav class="header__menu menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a class="menu__link" href="#top">Начало</a>
+              <div class="header__burger">
+                <span></span>
+              </div>
+              <nav class="header__menu">
+                <ul class="header__list">
+                  <li class="header__item">
+                    <a class="header__link" href="#top">Начало</a>
                   </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#m-title-1">Web-технологии</a>
+                  <li class="header__item">
+                    <a class="header__link" href="#m-title-1">Web-технологии</a>
                   </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#m-title-2">HTML/CSS/JS</a>
+                  <li class="header__item">
+                    <a class="header__link" href="#m-title-2">HTML/CSS/JS</a>
                   </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#m-title-3">Обзор HTML</a>
+                  <li class="header__item">
+                    <a class="header__link" href="#m-title-3">Обзор HTML</a>
                   </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#m-title-4">Обзор CSS</a>
+                  <li class="header__item">
+                    <a class="header__link" href="#m-title-4">Обзор CSS</a>
                   </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#m-title-5">Обзор JavaScript</a>
+                  <li class="header__item">
+                    <a class="header__link" href="#m-title-5"
+                      >Обзор JavaScript</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -57,48 +68,48 @@
         <!--Ограниительный контейнер для блока main-->
         <div class="main__container column__container">
           <!--Содержание блока main-->
-          <div class="main__content">
+          <div class="main__page">
             <!-- Сайдбар - это колонка слева, где будет находится оглавление -->
-            <div class="sidebar">
-              <div class="sidebar__table">
-                <ul class="table__list">
-                  <ol class="table__item">
-                    <a href="" class="table__link">Начало</a>
+            <aside class="sidebar">
+              <div class="sidebar__menu">
+                <ul class="sidebar__list">
+                  <ol class="sidebar__item">
+                    <a href="" class="sidebar__link">Начало</a>
                   </ol>
-                  <ol class="table__item">
-                    <a href="" class="table__link">Web-технологии</a>
+                  <ol class="sidebar__item">
+                    <a href="" class="sidebar__link">Web-технологии</a>
                   </ol>
-                  <ol class="table__item">
-                    <a href="" class="table__link">HTML/CSS/JS</a>
+                  <ol class="sidebar__item">
+                    <a href="" class="sidebar__link">HTML/CSS/JS</a>
                   </ol>
-                  <ol class="table__item">
-                    <a href="" class="table__link">Обзор HTML</a>
-                    <ul class="table__list">
-                      <ol class="table__item">
-                        <a href="" class="table__link">Подпункт 1</a>
+                  <ol class="sidebar__item">
+                    <a href="" class="sidebar__link">Обзор HTML</a>
+                    <ul class="sidebar__list">
+                      <ol class="sidebar__item">
+                        <a href="" class="sidebar__link">Подпункт 1</a>
                       </ol>
-                      <ol class="table__item">
-                        <a href="" class="table__link">Подпункт 2</a>
+                      <ol class="sidebar__item">
+                        <a href="" class="sidebar__link">Подпункт 2</a>
                       </ol>
-                      <ol class="table__item">
-                        <a href="" class="table__link">Подпункт 3</a>
+                      <ol class="sidebar__item">
+                        <a href="" class="sidebar__link">Подпункт 3</a>
                       </ol>
                     </ul>
                   </ol>
-                  <ol class="table__item">
-                    <a href="" class="table__link">Обзор CSS</a>
+                  <ol class="sidebar__item">
+                    <a href="" class="sidebar__link">Обзор CSS</a>
                   </ol>
-                  <ol class="table__item">
-                    <a href="" class="table__link">Обзор JavaScript</a>
+                  <ol class="sidebar__item">
+                    <a href="" class="sidebar__link">Обзор JavaScript</a>
                   </ol>
                 </ul>
               </div>
-            </div>
+            </aside>
 
             <!-- Не сайдбар (т.е. всё остальное)-->
-            <div class="notsidebar">
+            <div class="content">
               <!--Оболочка, чтобы выстроить содержимые блоки по вертикали flex > column-->
-              <div class="notsidebar__column _column">
+              <div class="content__column _column">
                 <!--Первый раздел - Введение!-->
                 <div class="introduction">
                   <div class="introduction__container">
@@ -143,11 +154,13 @@
                     </h2>
                     <div class="technology__row row__container">
                       <div class="technology__HTML">
-                        <img
-                          src="src/img/html5--transparent.png"
-                          alt="изображение HTML5"
-                          class="technology__img"
-                        />
+                        <div class="technology__img">
+                          <img
+                            src="src/img/html5--transparent.png"
+                            alt="изображение HTML5"
+                          />
+                        </div>
+
                         <h3 class="technology__name">HTML</h3>
                         <p class="technology__description">
                           Язык гипертекстовой разметки — это язык, используемый
@@ -156,11 +169,13 @@
                         </p>
                       </div>
                       <div class="technology__CSS">
-                        <img
-                          src="src/img/CSS3--transparent.png"
-                          alt="изображение CSS3"
-                          class="technology__img"
-                        />
+                        <div class="technology__img">
+                          <img
+                            src="src/img/CSS3--transparent.png"
+                            alt="изображение CSS3"
+                          />
+                        </div>
+
                         <h3 class="technology__name">CSS</h3>
                         <p class="technology__description">
                           Язык гипертекстовой разметки — это язык, используемый
@@ -169,11 +184,13 @@
                         </p>
                       </div>
                       <div class="technology__JS">
-                        <img
-                          src="src/img/JS--transparent.png"
-                          alt="изображение JS"
-                          class="technology__img"
-                        />
+                        <div class="technology__img">
+                          <img
+                            src="src/img/JS--transparent.png"
+                            alt="изображение JS"
+                          />
+                        </div>
+
                         <h3 class="technology__name">JS</h3>
                         <p class="technology__description">
                           Язык гипертекстовой разметки — это язык, используемый
@@ -266,6 +283,8 @@
         </div>
       </footer>
     </div>
+    <!--Подключаем скрипты, в т.ч. jquery... Потом как-нибудь перепишу на чистом js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="src/JS/script.js"></script>
   </body>
 </html>
