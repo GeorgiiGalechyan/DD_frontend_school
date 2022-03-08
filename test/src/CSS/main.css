@@ -52,6 +52,20 @@
   font-weight: 500;
 }
 
+@media (max-width: 960px) {
+  .sidebar__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar__link {
+    font-size: 14px;
+    color: #313130;
+    font-weight: 400;
+  }
+}
+
 .sidebar__link:hover {
   color: crimson;
 }
@@ -68,26 +82,25 @@
 /*  Основной контент страницы (справа от сайдбара) --------------------- */
 
 .content {
+  padding: 0 0 0 450px;
 }
 
 .content__conteiner {
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
-  width: 900px;
-  padding-bottom: 150px;
+  max-width: 700px;
 }
 
 /* Общие правила для всех секций  */
-
-.content__section {
-}
 
 .content__section .title {
   font-size: 28px;
   line-height: 32px;
   color: black;
   margin: 0 auto 30px auto;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 @media (max-width: 960px) {
@@ -185,39 +198,4 @@
   .section-1 {
     padding: 50px 0px 0px 0px;
   }
-}
-
-.section-2 {
-}
-
-.section-3 {
-}
-
-.section-4 {
-}
-
-.section-5 {
-}
-
-.section-6 {
-}
-
-.section-7 {
-}
-
-.section-8 {
-}
-
-.section-9 {
-}
-
-.section-10 {
-}
-
-.section-11 {
-  height: 500px;
-}
-
-.section-12 {
-  height: 500px;
 }
