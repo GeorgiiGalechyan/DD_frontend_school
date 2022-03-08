@@ -18,12 +18,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 767px) {
+  /* запрет на скролл при открытом меню бургера*/
+  body.lock {
+    overflow: hidden;
+  }
+}
+
 .wrapper {
   min-height: 100%; /* высота по размеру эрана */
   overflow: hidden; /* скрываем элементы которые вылазяют за экран */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* секции могут иметь пространства между ними  */
 }
 
 .column__container {

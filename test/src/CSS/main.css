@@ -1,131 +1,151 @@
 .main {
   flex: 1 1 auto; /* разрешаем элементу увеличиваться и прижать footer к низу*/
-  padding: 100px 0 0 0;
-}
-.main__container {
-  width: 1200px;
+  padding: 60px 0px 0px 0px;
 }
 
-.main__page {
-  display: flex;
-  align-content: center;
+@media (max-width: 960px) {
+  .main {
+    padding: 60px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 33px 0px 0px 0px;
+  }
+}
+
+.main__container {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: flex; /* задаём элементу поведение flex */
 }
 
 /*  Сайдбар (слева от основного содержимого страницы) --------------------- */
 
-.sidebar {
+.sidebar__menu {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: #e9e6e4;
+  padding: 40px 0px 20px 0px;
+  z-index: 2;
 }
 
-.sidebar__table {
+.sidebar__list {
+  margin: 0px 20px 0px 40px;
 }
 
-.table__list {
+.sidebar__list li {
+  list-style-type: disc;
+  margin: 0px 0px 15px 0px;
 }
 
-.table__item {
+.sidebar__list li:last-child {
+  margin: 0px 0px 0px 0px;
 }
 
-.table__link {
+.sidebar__link {
+  font-size: 18px;
+  color: #313130;
+  font-weight: 500;
 }
 
-/*  Содержимое страницы (справа от сайдбара) ------------------------------- */
+.sidebar__link:hover {
+  color: crimson;
+}
+
+.sidebar__sub-list {
+  margin: 0px 20px 0px 35px;
+}
+
+.sidebar__sub-list li {
+  list-style-type: decimal;
+  margin: 15px 0px 15px 0px;
+}
+
+/*  Основной контент страницы (справа от сайдбара) --------------------- */
 
 .content {
 }
 
-.content__column {
+.content__conteiner {
   display: flex;
+  flex: 0 1 auto;
   flex-direction: column;
+  width: 900px;
+  padding-bottom: 150px;
 }
 
-.introduction {
-}
-.introduction__container {
-}
-.introduction__row {
-}
-.introduction__title {
-}
-.introduction__text {
-}
-.introduction__list {
+/* Общие правила для всех секций  */
+
+.content__section {
+  font-size: 18px;
+  line-height: 24px;
+  color: dimgray;
 }
 
-.technology {
+.content__section img {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* ограничивающий контейнер для блоков??? */
-.technology__container {
+@media (max-width: 960px) {
+  .content__section img {
+    max-width: 550px;
+  }
 }
 
-.content-title {
+@media (max-width: 767px) {
+  .content__section img {
+    max-width: 400px;
+  }
 }
 
-.technology__row {
-  display: flex;
-  flex-direction: row;
-}
-.technology__HTML {
-  display: flex;
-  flex-direction: column;
+/* Модификаторы секций */
+
+.section-1 {
+  padding: 80px 0px 0px 0px;
 }
 
-.technology__img {
-  flex: 0 1 150px;
+@media (max-width: 767px) {
+  .section-1 {
+    padding: 50px 0px 0px 0px;
+  }
 }
 
-.technology__img img {
-  max-width: 100%;
+.section-2 {
 }
 
-.technology__name {
-}
-.technology__description {
-}
-.technology__CSS {
-  display: flex;
-  flex-direction: column;
-}
-.technology__JS {
-  display: flex;
-  flex-direction: column;
+.section-3 {
 }
 
-/* Блок с описанием HTML */
-
-.htmlReview {
-}
-.htmlReview__container {
-}
-.htmlReview__row {
-}
-.htmlReview__title {
-}
-.htmlReview__title--menuTitle {
+.section-4 {
 }
 
-/* Блок с описанием CSS */
-
-.CSSReview {
-}
-.CSSReview__container {
-}
-.CSSReview__row {
-}
-.CSSReview__title {
-}
-.CSSReview__title--menuTitle {
+.section-5 {
 }
 
-/* Блок с описанием JS */
+.section-6 {
+}
 
-.JSReview {
+.section-7 {
 }
-.JSReview__container {
+
+.section-8 {
 }
-.JSReview__row {
+
+.section-9 {
 }
-.JSReview__title {
+
+.section-10 {
 }
-.JSReview__title--menuTitle {
+
+.section-11 {
+  height: 500px;
+}
+
+.section-12 {
+  height: 500px;
 }

@@ -1,4 +1,4 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу-->
+p<!-- Сообщаем браузеру как стоит обрабатывать эту страницу-->
 <!DOCTYPE html>
 <!--Оболочка документа, указывает язык содержимого-->
 <html lang="ru">
@@ -20,41 +20,45 @@
   </head>
 
   <!--Отображаемое тело страницы-->
-  <body body>
+  <body>
     <!--Оболочка для демонстрации-->
     <div class="wrapper _column">
       <!--Шапка-->
-      <header id="top" class="header">
+      <header class="header">
         <!--Ограничивающий контейнер-->
         <div class="header__container column__container">
           <!--Содержимое блока header (шапки)-->
           <div class="header__content">
             <div class="header__row">
-              <a class="header__logo" href="">DIGITAL<br />GESIGN</a>
+              <!-- Логотип -->
+              <div class="header__logo">
+                <a href="#">DIGITAL<br />DESIGN</a>
+              </div>
+
+              <!-- Бургер (меню) -->
+
               <div class="header__burger">
                 <span></span>
               </div>
               <nav class="header__menu">
                 <ul class="header__list">
                   <li class="header__item">
-                    <a class="header__link" href="#top">Начало</a>
+                    <a class="header__link" href="#">Демонстрация </a>
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#m-title-1">Web-технологии</a>
+                    <a class="header__link" href="#">Демонстрация </a>
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#m-title-2">HTML/CSS/JS</a>
+                    <a class="header__link" href="#">Демонстрация </a>
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#m-title-3">Обзор HTML</a>
+                    <a class="header__link" href="#">Демонстрация </a>
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#m-title-4">Обзор CSS</a>
+                    <a class="header__link" href="#">Демонстрация </a>
                   </li>
                   <li class="header__item">
-                    <a class="header__link" href="#m-title-5"
-                      >Обзор JavaScript</a
-                    >
+                    <a class="header__link" href="#">Демонстрация </a>
                   </li>
                 </ul>
               </nav>
@@ -64,184 +68,507 @@
       </header>
 
       <!--Main - это пространство между шапкой и подвалом -->
-      <main class="main">
+      <main id="top" class="main">
         <!--Ограниительный контейнер для блока main-->
-        <div class="main__container column__container">
+        <div class="main__container">
           <!--Содержание блока main-->
           <div class="main__page">
             <!-- Сайдбар - это колонка слева, где будет находится оглавление -->
             <aside class="sidebar">
-              <div class="sidebar__menu">
-                <ul class="sidebar__list">
-                  <ol class="sidebar__item">
-                    <a href="" class="sidebar__link">Начало</a>
-                  </ol>
-                  <ol class="sidebar__item">
-                    <a href="" class="sidebar__link">Web-технологии</a>
-                  </ol>
-                  <ol class="sidebar__item">
-                    <a href="" class="sidebar__link">HTML/CSS/JS</a>
-                  </ol>
-                  <ol class="sidebar__item">
-                    <a href="" class="sidebar__link">Обзор HTML</a>
-                    <ul class="sidebar__list">
-                      <ol class="sidebar__item">
-                        <a href="" class="sidebar__link">Подпункт 1</a>
-                      </ol>
-                      <ol class="sidebar__item">
-                        <a href="" class="sidebar__link">Подпункт 2</a>
-                      </ol>
-                      <ol class="sidebar__item">
-                        <a href="" class="sidebar__link">Подпункт 3</a>
-                      </ol>
-                    </ul>
-                  </ol>
-                  <ol class="sidebar__item">
-                    <a href="" class="sidebar__link">Обзор CSS</a>
-                  </ol>
-                  <ol class="sidebar__item">
-                    <a href="" class="sidebar__link">Обзор JavaScript</a>
-                  </ol>
-                </ul>
+              <div class="sidebar__conteiner">
+                <div class="sidebar__menu">
+                  <ul class="sidebar__list">
+                    <li>
+                      <a href="#section-1" class="sidebar__link"
+                        >Как пользоваться Visual Studio Code</a
+                      >
+                      <ul class="sidebar__sub-list">
+                        <li>
+                          <a href="#section-2" class="sidebar__link">
+                            Интерфейс Visual Studio Code</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-3" class="sidebar__link"
+                            >Русификация Visual Studio Code</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-4" class="sidebar__link"
+                            >Внешний вид</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-5" class="sidebar__link"
+                            >Управление проектами</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-6" class="sidebar__link"
+                            >Авто-форматирование кода</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-7" class="sidebar__link">
+                            Автодополнение</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-8" class="sidebar__link"
+                            >Управление Vim</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-9" class="sidebar__link"
+                            >Отладка кода</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-10" class="sidebar__link"
+                            >Терминал</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#section-11" class="sidebar__link"
+                            >Использование Git</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#section-12" class="sidebar__link">Выводы</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </aside>
 
             <!-- Не сайдбар (т.е. всё остальное)-->
             <div class="content">
-              <!--Оболочка, чтобы выстроить содержимые блоки по вертикали flex > column-->
-              <div class="content__column _column">
-                <!--Первый раздел - Введение!-->
-                <div class="introduction">
-                  <div class="introduction__container">
-                    <div class="introduction__row">
-                      <h2 id="m-title-1" class="introduction__title">
-                        Web-технологии
-                      </h2>
-                      <p class="introduction__text">
-                        Логично предположить, что web-технологии, это
-                        технологии, которые используются в web. Согласно
-                        документации
-                        <a href="https://developer.mozilla.org/ru/docs/Web"
-                          >MDN Web Docs</a
-                        >
-                        к web-технологиям можно отнести:
-                      </p>
-                      <ul class="introduction__list">
-                        <li>
-                          базовые технологии веб разработки (HTML, CSS, HTTP);
-                        </li>
-                        <li>
-                          технологии написания сценариев (JavaScript, Веб API,
-                          Веб компоненты);
-                        </li>
-                        <li>графика (Canvas, SVG, WebGL);</li>
-                        <li>аудио, видео и мультимедиа;</li>
-                        <li>прочие.</li>
-                      </ul>
-                      <p class="introduction__text">
-                        Сегодня мы кратенько рассмотрим классическую тройку веб
-                        технологий - HTML, CSS, JavaScript.
-                      </p>
-                    </div>
+              <!--Оболочка, чтобы выстроить содержимые блоки по вертикали flex-direction: column-->
+              <div class="content__conteiner">
+                <!-- Секция 1 - КАК ПОЛЬЗОВАТЬСЯ VISUAL STUDIO CODE -->
+                <div id="section-1" class="content__section section-1">
+                  <h1 class="section__title title">
+                    КАК ПОЛЬЗОВАТЬСЯ VISUAL STUDIO CODE
+                  </h1>
+                  <p class="section__text">
+                    В отличие от предыдущих статей на эту тему, я не буду
+                    рассказывать про установку. Об этом есть полноценная статья,
+                    поэтому
+                    <a
+                      href="https://losst.ru/kak-ustanovit-visual-studio-code-na-ubuntu"
+                      target="_blank"
+                    >
+                      посмотрите там</a
+                    >. Программа без труда ставится с официального сайта или из
+                    snap-пакета в любом дистрибутиве, основанном на Debian или
+                    RedHat. Первым делом остановимся на интерфейсе программы.
+                    Причём будет рассмотрена именно работа Visual Studio Code
+                    для начинающих. Если вы уже опытный разработчик, вряд-ли вы
+                    найдёте для себя что-то новое.
+                  </p>
+                </div>
+
+                <!-- Секция 2 - 1. ИНТЕРФЕЙС VISUAL STUDIO CODE -->
+                <div id="section-2" class="content__section section-2">
+                  <h1 class="section__title sub-title">
+                    1. ИНТЕРФЕЙС VISUAL STUDIO CODE
+                  </h1>
+                  <p class="section__text">
+                    Интерфейс программы типичен для многих редакторов кода. Но
+                    есть и свои особенности. Условно главное окно программы
+                    можно разделить на семь частей:
+                  </p>
+                  <div class="section__img">
+                    <img src="/test/src/img/img_1.png" alt="интерфей vscode" />
+                  </div>
+                  <p>
+                    Именно этими участками вы будете пользоваться во время
+                    работы с VS Code:
+                  </p>
+                  <ol class="section__list">
+                    <li>
+                      <strong>Главное меню программы </strong>- можно
+                      использовать для доступа к настройкам, открытия проектов и
+                      папок и многого другого;
+                    </li>
+                    <li>
+                      <strong>Левая панель</strong> - эта панель есть только в
+                      VS Code, она позволяет переключаться между просмотром
+                      дерева каталогов, поиском, отладкой и окном установки
+                      дополнений. Сюда же некоторые расширения добавляют свои
+                      меню, например Docker, Git и расширение для управления
+                      проектами.
+                    </li>
+                    <li>
+                      <strong>Проводник</strong> - по умолчанию здесь
+                      отображается дерево каталогов, но тут же вы обнаружите
+                      настройки отладки или доступные для установки расширения,
+                      если выбран соответствующий пункт на боковой панели.
+                    </li>
+                    <li>
+                      <strong>Рабочая область</strong> - здесь выполняется
+                      редактирование файла.
+                    </li>
+                    <li>
+                      <strong>Мини карта </strong>- позволяет быстро
+                      ориентироваться по открытому исходнику.
+                    </li>
+                    <li>
+                      <strong>Нижняя панель</strong> - здесь отображается вывод
+                      программы при выполнении, консоль самой Visual Code, а
+                      также здесь есть встроенный терминал.
+                    </li>
+                    <li>
+                      <strong>Статус бар</strong> - отображается общая
+                      информация о состоянии программы.
+                    </li>
+                  </ol>
+                </div>
+
+                <!-- Секция 3 - 2. РУСИФИКАЦИЯ VISUAL STUDIO CODE -->
+                <div id="section-3" class="content__section section-3">
+                  <h1 class="section__title sub-title">
+                    2. РУСИФИКАЦИЯ VISUAL STUDIO CODE
+                  </h1>
+                  <p class="section__text">
+                    По умолчанию среда устанавливается на английском языке.
+                    Лучше так всё и оставить: большинство информации по
+                    программированию в интернете на английском языке, и, если вы
+                    привыкните к такому формату, вам будет проще во всём этом
+                    ориентироваться. Но если вас интересует, как русифицировать
+                    Visual Studio Code, то делается это очень просто. На боковой
+                    панели кликните по значку с квадратиками, который отвечает
+                    за установку дополнений, и наберите в поле поиска
+                    <strong>scode-language-pack-ru;</strong> утилита найдёт
+                    только один пакет, нажмите <strong>install</strong>, чтобы
+                    установить его:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_2.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Для выбора языка нажмите <strong>Ctrl+Shift+P</strong> и
+                    начните набирать <strong>Config</strong>, в предложенном
+                    списке выберите <strong>Configure Display Language</strong>:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_3.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Затем выберите <strong>ru</strong> и перезапустите
+                    программу. Всё. После этого интерфейс программы станет
+                    русским.
+                  </p>
+                </div>
+
+                <!-- Секция 4 - 3. ВНЕШНИЙ ВИД -->
+                <div id="section-4" class="content__section section-4">
+                  <h1 class="section__title sub-title">3. ВНЕШНИЙ ВИД</h1>
+                  <p>
+                    Одна из важных вещей для среды разработки - её внешний вид и
+                    тема оформления. Чтобы изменить тему оформления, надо нажать
+                    сочетание <strong>Ctrl+Shift+P</strong> и набрать
+                    <strong>Theme</strong>. Затем в меню надо выбрать
+                    <strong>Color Theme</strong>:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_4.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Затем в открывшемся меню осталось выбрать нужную тему
+                    стрелками и нажать <strong>Enter</strong>. По умолчанию
+                    доступно несколько тёмных и светлых тем:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_5.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Скачать новые темы можно с
+                    <a
+                      href="https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs"
+                      target="_blank"
+                    ></a>
+                    официального сайта Visual Studio Code. Здесь же можно
+                    настроить тему иконок.
+                  </p>
+                </div>
+
+                <!-- Секция 5 - 4. УПРАВЛЕНИЕ ПРОЕКТАМИ -->
+                <div id="section-5" class="content__section section-5">
+                  <h1 class="section__title sub-title">
+                    4. УПРАВЛЕНИЕ ПРОЕКТАМИ
+                  </h1>
+                  <p>
+                    Очень часто бывает, что приходится переключаться между
+                    несколькими проектами во время работы. По умолчанию в VS
+                    Code для этого надо открывать рабочую папку проекта через
+                    меню. Но есть выход. Это расширение
+                    <strong>Project Manager</strong>. С его помощью вы можете
+                    сохранять проекты и переключаться между ними в один клик.
+                    Установите <strong>Project Manager</strong> как было описано
+                    выше, затем кликните на боковой панели по значку с папкой
+                  </p>
+                  <p>
+                    Здесь отображается список доступных проектов. Чтобы
+                    запомнить текущую папку в качестве проекта, кликните по
+                    значку с дискетой и введите имя проекта:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_6.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    После этого вы сможете очень просто управлять своими
+                    проектами.
+                  </p>
+                </div>
+
+                <!-- Секция 6 - 5. АВТО-ФОРМАТИРОВАНИЕ КОДА-->
+                <div id="section-6" class="content__section section-6">
+                  <h1 class="section__title sub-title">
+                    5. АВТО-ФОРМАТИРОВАНИЕ КОДА
+                  </h1>
+                  <p>
+                    Один из самых важных моментов в работе с кодом - это его
+                    однообразие. Приводить код к одному виду вручную не всегда
+                    удобно - для этого и были придуманы различные расширения.
+                    Это <strong>PHP-CS-Fixer</strong> для PHP и
+                    <strong>Prettier</strong> для JS/HTML/CSS. Установите их
+                    через меню установки дополнений, а затем используйте
+                    сочетание клавиш <strong>Ctrl+Shift+F</strong> в Windows или
+                    <strong>Ctrl+Shift+I</strong> в Linux, для того чтобы
+                    выполнять выравнивание кода Visual Studio Code.
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_7.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
                   </div>
                 </div>
 
-                <!--Второй раздел - Краткий обзор HTML, CSS, JS!-->
-                <div class="technology">
-                  <div class="technology__container column__container">
-                    <h2 id="m-title-2" class="content-title">
-                      Краткий обзор HTML, CSS и JavaScript
-                    </h2>
-                    <div class="technology__row row__container">
-                      <div class="technology__HTML">
-                        <div class="technology__img">
-                          <img
-                            src="src/img/html5--transparent.png"
-                            alt="изображение HTML5"
-                          />
-                        </div>
-
-                        <h3 class="technology__name">HTML</h3>
-                        <p class="technology__description">
-                          Язык гипертекстовой разметки — это язык, используемый
-                          для определения структуры и описания содержания
-                          веб-страницы в структурированной форме.
-                        </p>
-                      </div>
-                      <div class="technology__CSS">
-                        <div class="technology__img">
-                          <img
-                            src="src/img/CSS3--transparent.png"
-                            alt="изображение CSS3"
-                          />
-                        </div>
-
-                        <h3 class="technology__name">CSS</h3>
-                        <p class="technology__description">
-                          Язык гипертекстовой разметки — это язык, используемый
-                          для определения структуры и описания содержания
-                          веб-страницы в структурированной форме.
-                        </p>
-                      </div>
-                      <div class="technology__JS">
-                        <div class="technology__img">
-                          <img
-                            src="src/img/JS--transparent.png"
-                            alt="изображение JS"
-                          />
-                        </div>
-
-                        <h3 class="technology__name">JS</h3>
-                        <p class="technology__description">
-                          Язык гипертекстовой разметки — это язык, используемый
-                          для определения структуры и описания содержания
-                          веб-страницы в структурированной форме.
-                        </p>
-                      </div>
-                    </div>
+                <!-- Секция 7 - 6. АВТОДОПОЛНЕНИЕ-->
+                <div id="section-7" class="content__section section-7">
+                  <h1 class="section__title sub-title">6. АВТОДОПОЛНЕНИЕ</h1>
+                  <p>
+                    Очень сильно помогает в разработке автоматическое дополнение
+                    кода. Вы пишите начало слова, а среда сама вам подсказывает,
+                    чем его можно завершить. Пакеты, которые позволяют выполнять
+                    автодополнение, называются <strong>*-intellisense</strong>.
+                    Рекомендуется установить <strong>PHP Intellisense</strong>,
+                    <strong>CSS Intellisense</strong> и
+                    <strong>Path Intellisense</strong> для автодополнения путей
+                    к файлам. Для разных фреймворков существуют свои расширения
+                    автоматического дополнения кода, например, для Laravel есть
+                    <strong>Laravel Extra Intellisense</strong>. Подсветка
+                    синтаксиса обычно уже встроена в VS Code для многих языков,
+                    однако если её нет, тоже ищите расширение.
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_8.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
                   </div>
                 </div>
 
-                <!--Третий раздел - HTML!-->
-                <div class="htmlReview">
-                  <div class="htmlReview__container">
-                    <div class="htmlReview__row row__container">
-                      <h2
-                        id="m-title-3"
-                        class="htmlReview__title htmlReview__title--menuTitle"
-                      >
-                        HTML
-                      </h2>
-                    </div>
+                <!-- Секция 8 - 7. УПРАВЛЕНИЕ VIM -->
+                <div id="section-8" class="content__section section-10">
+                  <h1 class="section__title sub-title">7. УПРАВЛЕНИЕ VIM</h1>
+                  <p>
+                    Я привык к редактору Vim и хочу использовать его стиль
+                    везде, даже в Visual Studio Code. Если вы тоже хотите, для
+                    нас с вами есть расширение <strong>Vim</strong>, которое
+                    переносит все сочетания клавиш и режимы работы Vim в
+                    редактор Visual Studio. После его установки вы сможете
+                    перемещаться по файлу кнопками <strong>h</strong>,
+                    <strong>j</strong>, <strong>k</strong>, <strong>l</strong>,
+                    использовать <strong>Esc</strong> и сохранять файл командой
+                    <strong>:w</strong>.
+                  </p>
+                  <div class="section__img">
+                    <img src="" alt="скриншот экрана с приложением vscode" />
                   </div>
                 </div>
 
-                <!--Четвертый раздел - CSS!-->
-                <div class="CSSReview">
-                  <div class="CSSReview__container">
-                    <div class="CSSReview__row row__container">
-                      <h2
-                        id="m-title-4"
-                        class="CSSReview__title CSSReview__title--menuTitle"
-                      >
-                        CSS
-                      </h2>
-                    </div>
+                <!-- Секция 9 - 8. ОТЛАДКА КОДА -->
+                <div id="section-9" class="content__section section-11">
+                  <h1 class="section__title sub-title">8. ОТЛАДКА КОДА</h1>
+                  <p>
+                    В Visual Code есть интерфейс, с помощью которого выполняется
+                    отладка кода, но прежде, чем вы его сможете использовать для
+                    PHP, его придётся настроить. Для отладки кода на PHP
+                    используется отладчик Xdebug, поэтому необходимо установить
+                    дополнение <strong>PHP Debug</strong>. Далее кликните по
+                    треугольнику со значком жука на боковой панели. Если вы
+                    раньше ничего не отлаживали в этом проекте, то программа
+                    предложит вам создать файл <strong>launch.json</strong>.
+                    Кликните по этой ссылке. В открывшемся списке выберите
+                    <strong>PHP</strong>:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_9.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    В полученном файле надо обратить внимание только на поле
+                    <strong>port</strong>. Он должен быть такой же, как и
+                    значение переменной <strong>xdebug.remote_port</strong> в
+                    php.ini. У меня это 9008. Сохраните изменения и нажмите
+                    зелёный треугольник для начала отладки.
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_10.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Возможно, программа ещё спросит путь к папке с файлами
+                    проекта. Если это локальный компьютер, то проблем возникнуть
+                    не должно. Затем нужно выбрать точки остановки. Эти точки
+                    ставятся в самой левой части области редактора напротив
+                    строчки, в которой вы хотите остановится:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_11.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Последний шаг: надо открыть отлаживаемую страницу в
+                    браузере, но при этом для Chrome надо использовать
+                    расширение
+                    <a
+                      href="https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=ru"
+                      target="_blank"
+                    ></a>
+                    Xdebug Helper, которое включает необходимый флаг и сообщает
+                    Xdebug, что этот код надо отлаживать. Для этого надо выбрать
+                    режим Debug в расширении:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_12.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Затем Xdebug подключается к VS Code по выбранному нами порту
+                    и передаёт туда всю необходимую информацию. Только после
+                    этого вы сможете смотреть переменные и выполнять код
+                    пошагово:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_13.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
                   </div>
                 </div>
 
-                <!--Пятый раздел - JavaScript!-->
-                <div class="JSReview">
-                  <div class="JSReview__container">
-                    <div class="JSReview__row row__container">
-                      <h2
-                        id="m-title-5"
-                        class="JSReview__title JSReview__title--menuTitle"
-                      >
-                        JavaScript
-                      </h2>
-                    </div>
+                <!-- Секция 10 - 9. ТЕРМИНАЛ -->
+                <div id="section-10" class="content__section section-8">
+                  <h1 class="section__title sub-title">9. ТЕРМИНАЛ</h1>
+                  <p>
+                    В завершении поговорим о чём-то более простом. Одно из
+                    преимуществ VS Code перед другими редакторами - это
+                    встроенный терминал, который позволяет выполнять команды в
+                    системной оболочке Linux или в выбранной оболочке Windows.
+                    Если терминал ещё не открыт, вы можете сделать это с помощью
+                    <strong>Ctrl+Shift+P</strong> или из меню
+                    <strong>Терминал</strong> ->
+                    <strong>Создать терминал</strong>:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_14.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
                   </div>
+                </div>
+
+                <!-- Секция 11 - 10. ИСПОЛЬЗОВАНИЕ GIT -->
+                <div id="section-11" class="content__section section-8">
+                  <h1 class="section__title sub-title">
+                    10. ИСПОЛЬЗОВАНИЕ GIT
+                  </h1>
+                  <p>
+                    Ещё одна очень полезная возможность в Visual Studio Code -
+                    это интеграция с Git. Она работает по умолчанию, и вам даже
+                    не надо ничего дополнительно устанавливать. Достаточно
+                    только, чтобы в директории с проектом уже был
+                    инициализирован Git-репозиторий. Все новые или изменённые
+                    файлы будут подсвечены в проводнике.
+                  </p>
+                  <p>
+                    Кроме того, вы можете делать фиксацию изменений (
+                    <a
+                      href="https://losst.ru/kak-polzovatsya-git-dlya-nachinayushhih#%D0%A4%D0%B8%D0%BA%D1%81%D0%B0%D1%86%D0%B8%D1%8F_%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9"
+                      target="_blank"
+                      >коммиты</a
+                    >
+                    ) и отправлять изменения на сервер прямо в графическом
+                    интерфейсе. Сначала надо добавить файлы в коммит: кликните
+                    по значку разветвления на боковой панели. Здесь отображаются
+                    все изменённые файлы. Нажмите + напротив файлов, которые
+                    надо добавить:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_15.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Для того чтобы зафиксировать изменения, наберите пояснение к
+                    комиту в текстовой строке, затем нажмите Ctrl+Enter или
+                    галочку над текстовым полем:
+                  </p>
+                  <div class="section__img">
+                    <img
+                      src="/test/src/img/img_16.png"
+                      alt="скриншот экрана с приложением vscode"
+                    />
+                  </div>
+                  <p>
+                    Теперь осталось отправить изменения в репозиторий, для этого
+                    используйте кнопку в статус-баре со значком обновления.
+                    Смотрите на предыдущем снимке.
+                  </p>
+                </div>
+
+                <!-- Секция 12 - ВЫВОДЫ -->
+                <div id="section-12" class="content__section section-12">
+                  <h1 class="section__title title">ВЫВОДЫ</h1>
+                  <p>
+                    В этой статье мы рассмотрели, как работать в Visual Studio
+                    Code для программирования на PHP и других языках
+                    программирования, предназначенных для веб-разработки. Как
+                    видите, эта среда намного лучше подготовлена по умолчанию,
+                    чем тот же Atom и то, что приходится настраивать там, здесь
+                    уже есть "из коробки". А какой средой разработки пользуетесь
+                    вы? Напишите в комментариях!
+                  </p>
                 </div>
               </div>
             </div>
@@ -253,13 +580,11 @@
       <footer class="footer">
         <!--Ограничивающий контейнер-->
         <div class="footer__container">
-          <div class="footer__column column__container">
-            <div class="footer__license row__container">
-              <h3 class="license__text">
-                @ Использование кода третьими лицами запрещено, 2022.
-              </h3>
+          <div class="footer__column">
+            <div class="footer__license">
+              <p>@ Использование кода третьими лицами запрещено, 2022.</p>
             </div>
-            <div class="footer__author row__container">
+            <div class="footer__author">
               <a
                 class="author__name"
                 href="https://github.com/GeorgiiGalechyan/"
